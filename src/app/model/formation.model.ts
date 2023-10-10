@@ -1,5 +1,5 @@
 export class Formation {
-    idForm? : number;
+    idForm!: number;
     nomFormation? : string;
     typeFormation? : string;
     duree? : string;

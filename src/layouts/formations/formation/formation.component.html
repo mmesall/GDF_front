@@ -27,7 +27,7 @@
                       <figure class="thumnail">
                       <a href="course-single.html">
                         
-                        <img src= {{formation.image}} alt="Image" class="img-fluid">
+                        <img src="assets/images/formations/agriculture.png" alt="Image" class="img-fluid">
                        
                     </a>
                       <div class="price">{{formation.idForm}}</div>
@@ -51,7 +51,9 @@
                         <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique accusantium ipsam. -->
 
                     </p>
-                      <p><a href="course-single.html" class="btn btn-primary rounded-0 px-4">Postuler</a></p>
+                      <td><a href="course-single.html" class="btn btn-primary rounded-0 px-4">Postuler</a></td>
+                      <td><a class="btn btn-danger" (click)="supprimerFormation(formation)">Supprimer</a></td>
+                      <td><a class="btn btn-success" [routerLink]="['/modifier-formation',formation.idForm]">Modifier</a></td>
                       </div>
                   </div>
               </div>
@@ -59,8 +61,8 @@
           </div>
       </div>
   </div>
-  <p><a href="/ajouter-formation" class="btn btn-success rounded-0 px-4">Ajouter une formation</a></p>
-  <div class="section-bg style-1" style="background-image: url('assets/images/hero_1.jpg');">
+  <p><a href="/ajouter-formation" class="btn btn-success align-items-center rounded-0 px-4">Ajouter une formation</a></p>
+  <!-- <div class="section-bg style-1" style="background-image: url('assets/images/hero_1.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
@@ -82,7 +84,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 <!-- .site-wrap -->
 

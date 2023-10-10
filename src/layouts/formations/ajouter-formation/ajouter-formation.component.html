@@ -1,1 +1,80 @@
-<p>ajouter-formation works!</p>
+<!-- <p>ajouter-formation works!</p> -->
+
+
+
+    
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('assets/images/bg_1.jpg')">
+        <div class="container">
+          <div class="row align-items-end justify-content-center text-center">
+            <div class="col-lg-7">
+              <h2 class="mb-0">Créer une nouvelle formation</h2>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+
+    <div class="custom-breadcrumns border-bottom">
+      <div class="container">
+        <a href="/formation">Formation</a>
+        <span class="mx-3 icon-keyboard_arrow_right"></span>
+        <span class="current">Céer nouvelle formation</span>
+      </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+
+
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="row">
+                        <div hidden class="col-md-12 form-group">
+                            <label for="idForm">ID formation</label>
+                            <input type="text" id="idForm" [(ngModel)]="newFormation.idForm" name="idForm" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="nomFormation">Nom formation</label>
+                            <input type="text" id="nomFormation"  [(ngModel)]="newFormation.nomFormation" name="nomFormation" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="typeFormation">Type de formation</label>
+                            <input type="text" id="typeFormation" [(ngModel)]="newFormation.typeFormation" name="typeFormation" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="duree">Durée</label>
+                            <input type="text" id="duree" [(ngModel)]="newFormation.duree" name="duree" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="admission">Admission</label>
+                            <input type="text" id="admission" [(ngModel)]="newFormation.admission" name="admission" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="diplomeRequis">Diplome Requis</label>
+                            <input type="text" id="diplomeRequis" [(ngModel)]="newFormation.diplomeRequis" name="diplomeRequis" class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="image">Image</label>
+                            <input type="file" id="image" [(ngModel)]="newFormation.image" name="image" class="form-control-file form-control-lg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" (click)="addFormation()" class="btn btn-primary btn-lg px-5">Ajouter</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>{{message}}</h4>
+                    </div>
+                </div>
+            </div>
+            
+
+          
+        </div>
+    </div>
+
+    
+
+    
