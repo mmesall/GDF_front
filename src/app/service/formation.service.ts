@@ -12,7 +12,7 @@ const httpOptions = {
 })
 export class FormationService {
 
-  apiUrl: string = 'http://localhost:8080/gdf/api';
+  apiUrl: string = 'http://localhost:8080/gdf/formations';
 
   formations: Formation[] = [];
 
