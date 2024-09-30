@@ -24,11 +24,11 @@ export class AjouterFormationComponent implements OnInit {
    addFormation(){
     // console.log(this.newFormation);
     this.formationService.ajouterFormation(this.newFormation)
-    .subscribe(from => {
-      console.log(from);
-      this.router.navigate(['formation']);
+    .subscribe(data => {
+      console.log(data);
+      this.router.navigate(['formations']);
     });
-    this.message = "La formation " + this.newFormation.nomFormation + " a été bien ajoutée !";
+    // this.message = "La formation " + this.newFormation.nomFormation + " a été bien ajoutée !";
    }   
 
    

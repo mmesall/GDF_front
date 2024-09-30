@@ -1,9 +1,9 @@
 export class Formation {
-    idForm!: number;
+    // idForm!: number;
     nomFormation? : string;
-    typeFormation? : string;
+    // typeFormation? : string;
     duree? : string;
 	admission? : string;
 	diplomeRequis? : string;
-    image? : string;
+    // image? : string;
 }
